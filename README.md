@@ -4,6 +4,13 @@
 
 The Coupon Finder Web App is a tool that helps users find the best coupons and deals for their online purchases. It utilizes natural language processing (NLP) techniques to search for relevant offers based on user input. This project is built using Python, Flask, and other technologies.
 
+## Hosted Version
+You can access a hosted version of the Coupon Finder Web App by visiting the following URL:
+
+Hosted Coupon Finder:  http://pa1vasanth.pythonanywhere.com 
+
+The hosted version allows you to use the app without needing to set it up locally. Simply click the link and start searching for coupons and deals for your online purchases.
+
 ## Features
 
 - User-friendly web interface for entering search keywords.
