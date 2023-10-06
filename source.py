@@ -1,11 +1,20 @@
 import pandas as pd
+import os
+
+# Get the full path to your web app's root directory
+app_root = os.path.abspath(os.path.dirname(__file__))
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+# Now, you can use `app_root` to construct the absolute paths to your CSV files
+categories_path = os.path.join(app_root, "DS_NLP_search_data", "categories.csv")
+offer_retail_path = os.path.join(app_root, "DS_NLP_search_data", "offer_retailer.csv")
+brand_category_path = os.path.join(app_root, "DS_NLP_search_data", "brand_category.csv")
+
 
 def preprocess_data():
-    categories = pd.read_csv("./DS_NLP_search_data/categories.csv")
-    offer_retail = pd.read_csv("./DS_NLP_search_data/offer_retailer.csv")
-    brand_category = pd.read_csv("./DS_NLP_search_data/brand_category.csv")
+    categories = pd.read_csv(categories_path)
+    offer_retail = pd.read_csv(offer_retail_path)
+    brand_category = pd.read_csv(brand_category_path)
 
     # Vectorization
     tfidf_vect = TfidfVectorizer(stop_words='english', use_idf=True, smooth_idf=True)
@@ -86,5 +95,5 @@ def mainCouponer(keyword):
 
 
 
-   
+
 
