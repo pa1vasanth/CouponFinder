@@ -73,3 +73,9 @@ Usage
 
 Contributors
 - pa1vasanth - Project Developer
+
+Conclusion
+
+The Coupon Finder web app provides a convenient way for users to search for and discover coupons and deals for their online shopping needs. It simplifies the process of finding relevant coupons based on user-entered keywords related to retailers, brands, or categories.
+
+We hope you find this tool helpful in saving money on your online purchases!
